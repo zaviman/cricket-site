@@ -1,15 +1,29 @@
 h1 {
     text-align: center;
-    color: blue;
+    color: rgb(7, 41, 164);
 }
 
 #logo {
     width:125px;
     height:125px;
-
 }
 
 body{
-background-color: rgba(227,228,247,255);
-
+background-color: rgb(34, 34, 179);
 }
+canvas{display: block;
+}
+
+#particles-js {
+    position:absolute;
+    width: 100%;
+    height:100%;
+}
+
+ #box1{
+background: rgb(255, 255, 255);   
+height: 25rem; 
+margin: 0rem 20rem 20rem;
+border-radius: 2rem;
+box-shadow: 5px 10px; 
+ } 
