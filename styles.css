@@ -9,25 +9,62 @@ h1 {
 }
 
 #link{
-    z-index: 1;
-    position:relative
+    z-index: 0;
+    position:absolutes
 }
 body{
 background-color: rgb(34, 34, 179);
 }
-canvas{display: block;
+canvas {display: block;
 }
-
-#particles-js {
-    position:absolute;
-    width: 100%;
-    height:100%;
-}
-
  #box1{
 background: rgb(255, 255, 255);    
  height: 25rem; 
- margin: 0rem 20rem 20rem; 
+ margin: 0rem 20rem 24rem; 
  border-radius: 2rem; 
  box-shadow: 5px 10px;  
+ z-index: 1;
  } 
+#search-bar {
+    position:absolute;
+    left: 810px;
+    top: 580px;
+    height: 2rem; 
+    border-radius: 2rem; 
+}
+
+ #particles-js {
+    position:fixed;
+    width: 100%;
+    height:80%;
+    z-index: -1
+}
+ul {
+    border-radius: 2rem; 
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
